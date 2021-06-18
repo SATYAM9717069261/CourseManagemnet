@@ -5,7 +5,7 @@
         Entrepreneurship Network </small></a>
     <form class="d-flex">
       <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-      <button class="btn btn-outline-success" type="submit">Search</button>
+      <button class="btn btn-outline-primary" type="submit">Search</button>
     </form>
   </div>
 </nav>
@@ -13,7 +13,7 @@
 
 <!-- Side Menu start-->
 
-<div style="position: absolute; height: 100%; width:40px; background-color: #f8f9fa; cursor: pointer; text-align: center;"> 
+<div style="position: absolute; height: 94%; width:40px; background-color: #f8f9fa; cursor: pointer; text-align: center; z-index: 1;"> 
   <span (click)="hidemenu()">
   <svg xmlns="http://www.w3.org/2000/svg" width="33" height="33" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
     <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
@@ -21,7 +21,7 @@
   </span>
 </div>
 
-<div style="position: absolute; height: 100%; background-color: #f8f9fa;" [style.display]="menuDisplay">
+<div style="position: absolute; height: 94%; background-color: #f8f9fa; z-index: 1;" [style.display]="menuDisplay">
   <div style="cursor: pointer;" (click)="hidemenu()">
     <svg xmlns="http://www.w3.org/2000/svg" width="30" height="30" style="float:right" fill="currentColor" class="bi bi-x-square"
         viewBox="0 0 16 16">
