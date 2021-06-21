@@ -56,18 +56,27 @@
 		<div style="margin: 89px; color: white;"> 
 			<h2 style="font-size: xxx-large;font-weight: bold;"> Testimonials </h2> 
 		</div>
-		<div style="padding: 12px; display: flex;">
-			<!-- Review 1-->		
-			<div *ngFor="let item of review" class="card" style="width: 18rem;">
+		<div style="margin: 200px 50px 0px;">
+			<span style="float: left; color: white; font-size: xx-large; cursor: pointer;" (click)="reviewSliderControler('pre')">
+				&#10094;
+			</span>
+			<span style="float: right; color: white; font-size: xx-large; cursor: pointer;" (click)="reviewSliderControler('next')">
+				&#10095;
+			</span>
+		</div>
+		<div style="padding: 12px; display: flex; justify-content: center; margin: -190px 12px 0px 12px;">
+			<!-- Review Start-->		
+			<div *ngFor="let item of reviewSliderControler('none')" class="card" style="width: 18rem;">
 				<img src="{{item['profilePic']}}" class="card-img-top" alt="...">
 				<div class="card-body">
 				  <h5 class="card-title">{{item['name']}}</h5>
 				  <p class="card-text">{{item['message']}}</p>
-				  <a href="#" class="btn btn-primary">{{item['redirect_btn']}}</a>
+				  <a routerLink="{{item['redirect_url']}}" class="btn btn-primary">{{item['redirect_btn']}}</a>
 				</div>
 			</div>
-			<!-- Review 1 End-->
+			<!-- Review End-->
 		</div>	
+		
 	</div>
 	<!-- End Testimonials-->
 </div>

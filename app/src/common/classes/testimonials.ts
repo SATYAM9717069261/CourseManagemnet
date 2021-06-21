@@ -15,16 +15,17 @@ export class Testimonials{
 		*/
 		this.testimonials.push(
 			{profilePic:"../../assets/home/profile_img.jpg",message:"TEN was my first ever experience into internship. Even though I didn't have much of an idea about my responsibilities, my mentors at TEN and fellow colleagues helped me a lot in making me understand my roles and were very cooperative throughout."
-			,name:"User1",redirect_btn:"None",redirect_url:"#"},
+			,name:"User1",redirect_btn:"Read more..",redirect_url:"#"},
 			{profilePic:"../../assets/home/profile_img.jpg",message:"TEN was my first ever experience into internship. Even though I didn't have much of an idea about my responsibilities, my mentors at TEN and fellow colleagues helped me a lot in making me understand my roles and were very cooperative throughout.",
-			name:"User1",redirect_btn:"None",redirect_url:"#"},
+			name:"User1",redirect_btn:"Read more..",redirect_url:"#"},
 			{profilePic:"../../assets/home/profile_img.jpg",message:"TEN was my first ever experience into internship. Even though I didn't have much of an idea about my responsibilities, my mentors at TEN and fellow colleagues helped me a lot in making me understand my roles and were very cooperative throughout.",
-			name:"User1",redirect_btn:"None",redirect_url:"#"},
+			name:"User1",redirect_btn:"Read more..",redirect_url:"#"},
 			{profilePic:"../../assets/home/profile_img.jpg", message:"TEN was my first ever experience into internship. Even though I didn't have much of an idea about my responsibilities, my mentors at TEN and fellow colleagues helped me a lot in making me understand my roles and were very cooperative throughout."
-			,name:"User1",redirect_btn:"None",redirect_url:"#"}
+			,name:"User1",redirect_btn:"Read more..",redirect_url:"#"}
 		);
 	}
 	getdata(){
+		/** add id's helps to control slider */
 		return this.testimonials;
 	}
 
