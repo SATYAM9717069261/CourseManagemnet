@@ -1,35 +1,73 @@
 <div class="container" style="margin-top:2%">
-	<div>
-		<ul class="nav justify-content-end">
-			<li class="nav-item">
-			  <a class="nav-link active" aria-current="page">Filter by: </a>
-			  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-				<li><a class="dropdown-item">Price Range: </a></li>
-				<li><a class="dropdown-item">Another action</a></li>
-				<li><hr class="dropdown-divider"></li>
-				<li><a class="dropdown-item">Something else here</a></li>
-			      </ul>
-			</li>
-		      </ul>
-	</div>
-	<div class="row row-cols-1 row-cols-md-2 g-4">
-		<div class="col">
-		  <div class="card">
-		    <img src="..." class="card-img-top" alt="...">
-		    <div class="card-body">
-		      <h5 class="card-title">Card title</h5>
-		      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-		    </div>
-		  </div>
+	<div class="banner">
+		<div style="height:100%; width:100%; background-color:#524e4e99">
+			<p class="banner_text">A World Of Knowledge <br> <small> At your Fingertips </small> </p>
 		</div>
-		<div class="col">
-		  <div class="card">
-		    <img src="..." class="card-img-top" alt="...">
-		    <div class="card-body">
-		      <h5 class="card-title">Card title</h5>
-		      <p class="card-text">This is a longer card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-		    </div>
-		  </div>
+	</div>
+
+	<!-- About Us-->
+	<div style="margin-top: 100px; position: relative;">
+		<h2>About us</h2>
+		<div style=" display:flex; flex-wrap: wrap;">
+			<div style="align-items: flex-start;width: 39em;height: 23em;">
+				<h2 style="margin: 150px 56px 0px;color: #245656de;">
+					Learning Together From the Comfort of Your Home
+				</h2>
+				<button style="margin: 20px 56px;">Read more..</button>
+			</div>
+			<div style="align-items: flex-end; background-image: url(../../assets/home/learn-togetter.jpg); background-size: cover;
+			    width: 39em;height: 23em;"></div>
+		</div>
+	</div>
+	<!-- End About Us-->
+
+	<!-- Course Benefit-->
+	<div style="margin-top: 100px; position: relative;">
+		<h2>Our Course Benefits</h2>
+		<div style=" display:flex; flex-wrap: wrap;  margin: 15px;">
+			<div class="post">
+				<h3 style="color: #245656de;">Expert Teachers</h3>
+				<p>Our instructors are more adept at monitoring student problems and assessing their
+					level of understanding and progress, and they provide much more relevant, useful
+					feedback.
+					We are experts in developing and testing hypotheses about learning difficulties
+					or instructional strategies.</p>
+			</div>			
+			<div class="post">
+				<h3 style="color: #245656de;">Flexible Curriculum</h3>
+				<p>Our expert teachers design and curate the curriculum using best practices and careful
+					consideration of how people learn and retain information with the ongoing tech
+					trends in the professional domain. We've debated every facet of our methodology,
+					from the order in which to teach concepts, the analogies used to clarify them
+					and how exercises should be structured to deliver the maximum educational punch
+				</p>
+
+			</div>
+			<div class="post">
+				<h3 style="color: #245656de;">Online Community</h3>
+				<p>Feel like home, with a "family of invisible friends".</p>
+			</div>
+		</div>
+	</div>
+	<!--End Course Benefit-->
+
+	<!-- Testimonials start-->
+	<div class="testimonials_img">
+		<div style="margin: 89px; color: white;"> 
+			<h2 style="font-size: xxx-large;font-weight: bold;"> Testimonials </h2> 
+		</div>
+		<div style="padding: 12px; display: flex;">
+			<!-- Review 1-->		
+			<div *ngFor="let item of review" class="card" style="width: 18rem;">
+				<img src="{{item['profilePic']}}" class="card-img-top" alt="...">
+				<div class="card-body">
+				  <h5 class="card-title">{{item['name']}}</h5>
+				  <p class="card-text">{{item['message']}}</p>
+				  <a href="#" class="btn btn-primary">{{item['redirect_btn']}}</a>
+				</div>
+			</div>
+			<!-- Review 1 End-->
 		</div>	
-	      </div>
+	</div>
+	<!-- End Testimonials-->
 </div>

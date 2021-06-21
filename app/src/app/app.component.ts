@@ -8,7 +8,7 @@ import {navbarMenu} from '../common/classes/navbarMenu';
 export class AppComponent {
   title = 'app';
   navbar:any;
-  menuDisplay='block';
+  menuDisplay='none';
   htmlString="<h1> DATA </h1>";
   constructor(private menu:navbarMenu){
     this.navbar=menu.sidenavbar;

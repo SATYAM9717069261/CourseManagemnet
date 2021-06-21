@@ -1,0 +1,35 @@
+.banner {
+	background-image: url("../../assets/home/scott-graham-5fNmWej4tAA-unsplash.jpg");
+	height: 49rem;
+	width: 100%;
+	background-size: cover;
+}
+
+.banner_text {
+	background-color: white;
+	font-size: xxx-large;
+	position: relative;
+	left: -5em;
+	top: 6em;
+	width: 11em;
+}
+
+.post {
+	width: 39em;
+	margin: 3px;
+	border: 1px solid #1d1717;
+	padding: 34px;
+}
+
+.testimonials_img {
+	border: 2px solid;
+	height: 56rem;
+	width: 100%;
+	background-image: url('../../assets/home/Testimonials.jpg');
+	background-size: cover;
+	text-align: center;
+}
+.card{
+	float: right;
+	margin:12px
+}
